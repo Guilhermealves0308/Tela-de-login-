@@ -1,0 +1,245 @@
+body {
+  background-image: url(/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+header .logo {
+  color: #ccc;
+  font-size: 20px;
+  padding: 16px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+header nav li {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+  background-color: transparent white;
+  backdrop-filter: white blur(8px);
+  color: #fff;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 24px;
+  display: block;
+
+  border-radius: 4px;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+main {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 47%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+}
+
+¨ .login-container>h2 {
+  color: #ffffff;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border-bottom: 2px solid white;
+  outline: none;
+  box-shadow: none;
+}
+
+.login-container input[type="text"]:disabled,
+.login-container input[type="password"]:disabled {
+  background-color: transparent;
+  color: #ccc;
+}
+
+.login-container input[type="text"]:disabled:hover,
+.login-container input[type="password"]:disabled:hover {
+  background-color: transparent;
+  color: #ccc;
+  cursor: not-allowed;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: not-allowed;
+
+}
+
+.login-container input[type="submit"],
+.login-container input[type="reset"],
+.login-container input[type="button"],
+.login-container button,
+.login-container input[type="submit"] {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 70%;
+  border-radius: 4px;
+  padding: 10px 20px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:disabled {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: not-allowed;
+  }
+  &:disabled:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:disabled:active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  &:disabled:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:disabled:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+}
+
+.login-container input[type="button"],
+.login-container button,
+.login-container input[type="submit"] {
+  justify-self: center;
+  border: none;
+  margin: 0 64px auto;
+  outline: none;
+  box-shadow: none;
+  border-bottom: solid 2px #ffffff;
+  border-radius: 0; 
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:disabled {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:disabled:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:disabled:active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  &:disabled:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:disabled:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+}
+
+::placeholder {
+ 
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+}
